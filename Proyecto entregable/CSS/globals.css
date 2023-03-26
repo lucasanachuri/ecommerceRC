@@ -1,0 +1,166 @@
+:root {
+  --primary: ;
+  --secondary: #fff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Andika&family=Poppins:ital@1&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+nav,
+header,
+main,
+footer {
+  padding: 0% 7%;
+}
+
+nav {
+  background-color: green;
+  color: #fff;
+  padding: 1rem;
+  height: 2vh;
+}
+
+footer {
+  margin-top: auto;
+  background-color: green;
+  height: 12vh;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.banner {
+  height: 200px;
+  background-color: #ccc;
+  justify-content: center;
+  align-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.categorias {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 16px;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border: solid lightslategrey;
+}
+
+.categoria {
+  font-family: "Poppins";
+  border-radius: 12px;
+  background-color: lightgreen;
+  padding: 10px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 50px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.producto {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+.producto h3 {
+  margin-top: 0;
+}
+
+.producto button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.producto button:hover {
+  background-color: #555;
+}
+
+.categorias_border {
+  border: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.box-categoriaS {
+  border: 16px;
+  margin: 16px 16px 16px 16px;
+  color: darkgreen;
+  display: flexbox;
+}
+
+.nav-btn {
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 1rem;
+  padding-block-end: 1rem;
+  height: 70px;
+}
+
+.h1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  body {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    grid-template-columns: auto auto auto;
+  }
+}
